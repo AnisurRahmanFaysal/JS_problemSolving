@@ -1,3 +1,5 @@
+
+//Solution1:
 console.log("Select an Option\n1.Add\n2.Sub\n3.Mul\n4.Dev");
 
 var number1, number2, option, C1, C2, C3,result;
@@ -34,8 +36,8 @@ else{
     console.log(result);
 }
 
-
-/* <p>var number1,number2,menu,Case;
+//Solution2:
+var number1,number2,menu,Case;
 
         menu = ["1.Add","2.Sub","3.Mul","4.Dev"];
         menu.forEach(element => {
@@ -47,16 +49,33 @@ else{
         
         
         
-        var numberCon1 = isNan(number1);
-        var numberCon2 = isNan(number2);
+        var numberCon1 = isNaN(number1);
+        var numberCon2 = isNaN(number2);
         
         Case = parseInt(prompt("What is your Choice:"));
-        var CaseCon = isNan(Case);
+        var CaseCon = isNaN(Case);
         
         
-        if(numberCon1 || numberCon || CaseCon){
+        if(numberCon1 || numberCon2 || CaseCon){
             console.log("Invalid Number");
         }
         else{
-            
-        }</p> */
+            switch(option){
+                case 1:
+                    result = number1+number2;
+                    break;
+        
+                case 2:
+                    result = number1-number2;
+                    break;
+                case 3:
+                    result = number1*number2;
+                    break;
+        
+                case 4:
+                    result = number1/number2;
+                    break;
+            }
+        
+            console.log(result);
+        } 
